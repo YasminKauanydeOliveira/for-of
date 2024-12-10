@@ -1,0 +1,11 @@
+<script>
+ let listaNumeros = [1, 2.5, -3, 4, 8.9, 4.789, -25.6, 42];
+let lista = [];
+
+for(let funil of listaNumeros){
+    if(funil > 0 && Number.isInteger(funil) == true){
+        lista.push(funil) 
+    }
+}
+document.write(`Foram localizados ${lista.length} elementos, que são eles ${lista}`)
+</script>

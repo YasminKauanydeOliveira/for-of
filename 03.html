@@ -1,0 +1,17 @@
+<script>
+        let listaNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let p = [];
+    let i = [];
+
+    for(let separa of listaNumeros){
+        if(separa % 2 == 0){
+            p.push(separa)
+        }else{
+            i.push(separa)
+        }
+    }
+   
+    document.write(`A lista de números pares de forma crescente é: ${p.sort(function(a, b)  {a-b}).join(" - ")}. E de forma decrecente é ${p.reverse().join(" - ")} <br>`);
+    
+    document.write(`A lista de números ímpares em forma crescente é: ${i.sort().join(" - ")} E em forma decrecente é: ${i.reverse().join(" - ")}`)
+</script>

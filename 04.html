@@ -1,0 +1,14 @@
+<script>
+    let listaDeItens = [1, "João", "Eduardo", "Joice", 3, 5, 6, 8, "Maria", 5.6, 10];
+    let pares = [];
+
+       for(let num of listaDeItens){
+        if(num % 2 == 0){
+            pares.push(num);
+             }
+       }
+       document.write(`Os numeros pares são ${pares} <br>`);
+       document.write(`A quantidade de numeros pares é ${pares.length} <br>`);
+       document.write(`A quantidade de elementos da lista é ${listaDeItens.length} <br>`);
+
+</script>

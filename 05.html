@@ -1,0 +1,13 @@
+<script>
+    let listaDeNomes = ["Amanda", "Eduardo", "Fábio", "Evelin", "César", "José", "Ivo", "Eva", "Otávio", "Inez", "Osmar", "Ulisses"];
+    let ordem = [];
+   
+    for(let volgal of listaDeNomes){
+        let separar = Array.from(volgal)
+        if(volgal[0] == "A" || volgal[0] == "E" || volgal[0] == "I" || volgal[0] == "O" || volgal[0] == "U"){
+            ordem.push(volgal)
+        }
+
+    }
+    document.write(ordem.sort().join(" - "))
+</script>

@@ -1,0 +1,19 @@
+<script>
+    let listaNumeros = [1, 4, 6, 8, 898, 7, 43, 2980, 3500, 10];
+    let pares = []
+
+    for(let item of listaNumeros){
+        if(item%2 === 0){
+        
+            pares.push(item)
+        
+        }else{
+            
+        };
+        }
+        pares.sort((a,b) => a-b)
+        document.write(`<ol> ${pares.join(" - ")} </ol>`)
+    
+
+
+</script>

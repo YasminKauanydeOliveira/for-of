@@ -1,0 +1,12 @@
+<script>
+    let listaNomes = ["João Pedro", "Gabriel José", "Ulisses Joao", "Pedro Henrique", "João da Silva", "João Henrique", "Alisson João"];
+
+let jao = [];
+
+for(let escolhe of listaNomes){
+    if(escolhe.search("João") >= 0 || escolhe.search("Joao") >= 0){
+        jao.push(escolhe)
+    }
+}
+document.write(jao)
+</script>

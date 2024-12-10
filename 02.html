@@ -1,0 +1,21 @@
+<script>
+ let listaNomes = ["João", "Maria", "José", "Amanda", "Beatriz", "Júlio", "Olívia"];
+    let m = [];
+    let f = [];
+
+    for(let categoria of listaNomes){
+        alert(categoria)
+        
+        let nome = prompt(`É masculino(M) ou feminino(f)?`).toLowerCase().trim();
+        
+        if(nome == "m" || nome == "masculino"){
+            m.push(categoria)
+        }else if(nome == "f" || nome == "feminino"){
+            f.push(categoria)
+        }else{
+            alert(`Invalido`)
+        }
+    }
+    document.write(`A lista de nomes masculinos é: <li>${m}</li>`);
+    document.write(`A lista de nomes femininos é: <li>${f}</li>`);
+</script>
